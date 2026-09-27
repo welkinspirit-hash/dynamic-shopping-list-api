@@ -10,6 +10,8 @@ const bodyElement = document.body;
 itemForm.addEventListener('submit', function(event) {
     event.preventDefault(); 
     const itemText = itemInput.value.trim();
+    
+// VALIDATION ROUTINE: Reject inputs consisting only of empty spacing paths
 
     if (itemText !== "") {
         const li = document.createElement('li');
